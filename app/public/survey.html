@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Star Wars - Express</title>
+  <title>Friend-Finder</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,16 +44,16 @@
             <div class="dropdown">
                 Question 1: 
                 <br>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Input
                 </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
                 <button class="dropdown-item" type="button">2 - Disagree</button>
                 <button class="dropdown-item" type="button">3 - Neutral</button>
                 <button class="dropdown-item" type="button">4 - Agree</button>
                 <button class="dropdown-item" type="button">5 - Strongly Agree</button>
-              </div>
+              </ul>
             </div>
             <br>
             <div class="dropdown">
@@ -195,7 +195,7 @@
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Add to the Force</button>
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Submit</button>
             </div>
           </div>
         </div>
@@ -205,6 +205,14 @@
   </div>
 
   <script type="text/javascript">
+    $(".dropdown-item").click(function(){
+        event.preventDefault();
+        console.log ($(this).text());
+
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+    });
+
     // Question: What does this code do?
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
