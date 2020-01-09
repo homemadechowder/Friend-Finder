@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars - Express</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Friend-Finder</h1>
+      <h3>We want your data!</h3>
+      <hr>
+      <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Survey Inputs</button></a>
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">
+            <h3><strong>Add Information</strong></h3>
+          </div>
+          <div class="card-body">
+            <form method="POST" role="form">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="role">Photo (Image URL)</label>
+                <input type="text" class="form-control" id="photoUrl">
+              </div>
+            <!-- Q1 -->
+            
+            <div class="dropdown">
+                Question 1: 
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 2:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 3:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 4:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 5:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input 
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 6:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 7:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 8:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 9:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input 
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown">
+                Questions 10:
+                <br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Input
+                </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                <button class="dropdown-item" type="button">2 - Disagree</button>
+                <button class="dropdown-item" type="button">3 - Neutral</button>
+                <button class="dropdown-item" type="button">4 - Agree</button>
+                <button class="dropdown-item" type="button">5 - Strongly Agree</button>
+              </div>
+            </div>
+            <br>
+
+            </form>
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Add to the Force</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      
+    //   {
+    //   routeName: "arale",
+    //   name: "Arale",
+    //   photoUrl: "https://res.cloudinary.com/teepublic/image/private/s--UEtF1hPq--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_0195c3,e_outline:48/co_0195c3,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1513405696/production/designs/2183975_1.jpg",
+    //   q1: "5",
+    //   q2: "5",
+    //   q3: "5",
+    //   q4: "5",
+    //   q5: "5",
+    //   q6: "5",
+    //   q7: "5",
+    //   q8: "5",
+    //   q9: "5",
+    //   q10: "5"
+    // }
+      var newSurvey = {
+        name: $("#name").val().trim(),
+        photoUrl: $("#photoUrl").val().trim(),
+        q1: $("#q1").val().trim(),
+        q2: $("#q2").val().trim(),
+        q3: $("#q3").val().trim(),
+        q4: $("#q4").val().trim(),
+        q5: $("#q5").val().trim(),
+        q6: $("#q6").val().trim(),
+        q7: $("#q7").val().trim(),
+        q8: $("#q8").val().trim(),
+        q9: $("#q9").val().trim(),
+        q10: $("#q10").val().trim()
+
+      };
+
+      $.post("/api/friends", newSurvey)
+        .then(function(data) {
+          console.log("survey.html", data);
+          alert("Survey Entry Recorded");
+        });
+    });
+  </script>
+
+</body>
+</html>
