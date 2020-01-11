@@ -1,7 +1,12 @@
+
+var survey = require("../data/friends")
+
+console.log(survey)
+
 module.exports = function(app) {
 
     app.get("/api/friends", function(req, res) {
-        return res.json(characters);
+        return res.json(survey);
     });
   
 
@@ -16,9 +21,7 @@ module.exports = function(app) {
       // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
         newSurvey.routeName = newSurvey.name.replace(/\s+/g, "").toLowerCase();
 
-        console.log(newSurvey);
-
-        characters.push(newSurvey);
+        survey.push(newSurvey);
 
         res.json(newSurvey);
     });
